@@ -33,3 +33,33 @@ pde3 = sp.Eq(
 print(pde1)
 print(pde2)
 print(pde3)
+
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Spatial grid
+x_vals = np.linspace(0, 10, 100)
+y_vals = np.linspace(0, 10, 100)
+
+X, Y = np.meshgrid(x_vals, y_vals)
+
+# Initial cancer cell concentration
+c0 = np.exp(-((X - 5)*2 + (Y - 5)*2) / 2)
+
+# Plot cancer invasion concentration
+plt.figure(figsize=(7, 6))
+
+plt.imshow(
+    c0,
+    extent=[0, 10, 0, 10],
+    origin="lower",
+    aspect="auto"
+)
+
+plt.xlabel("x")
+plt.ylabel("y")
+plt.title("Cancer Invasion PDE Model")
+plt.colorbar(label="Cancer Cell Concentration")
+plt.savefig("cancer invansion_growth.png", dpi=300, bbox_inches="tight")
+plt.show()

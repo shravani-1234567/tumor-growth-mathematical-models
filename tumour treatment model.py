@@ -22,3 +22,36 @@ ode2 = sp.Eq(
 
 print(ode1)
 print(ode2)
+
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Parameters
+r = 0.2
+K = 100
+C0 = 10
+d = 0.1
+
+# Time
+time = np.linspace(0, 50, 200)
+
+# Tumor growth with treatment
+tumor = np.zeros_like(time)
+tumor[0] = C0
+
+for i in range(1, len(time)):
+    dt = time[i] - time[i - 1]
+    tumor[i] = tumor[i - 1] + dt * (
+        r * tumor[i - 1] * (1 - tumor[i - 1] / K)
+        - d * tumor[i - 1]
+    )
+
+# Plot
+plt.figure()
+plt.plot(time, tumor)
+plt.xlabel("Time")
+plt.ylabel("Tumor Size")
+plt.title("Tumor Growth Under Treatment")
+plt.grid(True)
+plt.show()
