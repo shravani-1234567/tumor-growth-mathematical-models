@@ -39,8 +39,18 @@ The project includes the following models:
 
 Each Python file contains the implementation of a mathematical model related to tumor growth or treatment.
 
-The models are designed to calculate and visualize tumor behavior using mathematical equations and numerical methods.
 
 ## 📊 Results
 
 The models generate numerical results and graphical representations that help visualize tumor growth and the effects of different model parameters.
+## 📊 Results
+
+The mathematical models generate numerical results and graphical representations of tumor growth and treatment behavior.
+
+The graphs help visualize:
+
+- Tumor growth over time
+- Differences between mathematical growth models
+- Effect of carrying capacity on tumor growth
+- Tumor response to treatment
+- Behavior of tumor invasion and angiogenesis models
