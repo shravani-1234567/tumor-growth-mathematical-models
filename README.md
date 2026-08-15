@@ -1,152 +1,237 @@
-# Quantitative Analysis of Tumor Evolution Using Mathematical Models
+[12:51 pm, 15/08/2026] Nandusravs ❤️: Quantitative Analysis of Tumor Evolution Using Mathematical Models
 
-<<<<<<< HEAD
-## Overview
-
-This project implements mathematical models to study tumor growth, treatment response, and cancer invasion using Python.
-
-The project demonstrates how mathematical equations can be translated into computational models and visualized using graphs.
-
-## Models Implemented
-
-### 1. Exponential Growth Model
-
-Models tumor growth when the growth rate is proportional to the current tumor size.
-
-*Python file:* exponential_growth.py
-
-*Result:* Exponential increase in tumor size over time.
+> A computational study of tumor growth, treatment response, and cancer invasion using mathematical models and Python.
 
 ---
 
-### 2. Logistic Growth Model
-
-Models tumor growth while considering a limiting carrying capacity.
-
-*Python file:* logistic_growth.py
-
-*Result:* Tumor growth increases initially and gradually approaches the carrying capacity.
-
----
-
-### 3. Gompertz Growth Model
-
-Models tumor growth with a growth rate that decreases as the tumor becomes larger.
-
-*Python file:* gompertz_growth.py
-
-*Result:* Tumor growth increases rapidly initially and then slows down.
-
----
-
-### 4. Dynamic Carrying Capacity Model
-
-Models tumor growth using a carrying capacity that changes with time.
-
-*Python file:* dynamic_carrying_capacity.py
-
-*Result:* Tumor growth changes according to the time-dependent carrying capacity.
-
----
-
-### 5. Tumor Treatment Model
-
-Models tumor growth while including a treatment-related reduction term.
-
-*Python file:* tumor_treatment.py
-
-*Result:* Demonstrates the effect of treatment on tumor growth.
-
----
-
-### 6. Cancer Invasion PDE Model
-
-Uses a system of partial differential equations to represent cancer-cell concentration, another interacting variable, and tissue/environment dynamics in space and time.
-
-*Python file:* cancer_invasion_pde.py
-
-*Result:* A spatial visualization of cancer-cell concentration.
-
-## Technologies Used
-=======
 ## 📌 Project Overview
 
-This project focuses on the mathematical modeling and quantitative analysis of tumor growth and treatment using Python.
+This project explores the mathematical modeling of tumor evolution using a collection of ordinary and partial differential equation-based models.
 
-Different mathematical models are implemented to understand tumor growth behavior, tumor progression, invasion, angiogenesis, and treatment effects.
+The models are implemented in Python and visualized using numerical computation and scientific plotting tools. The project demonstrates how mathematical equations can be translated into computational simulations to study different tumor-growth behaviors.
+
+### Main Areas Covered
+
+- Tumor growth dynamics
+- Limited tumor growth
+- Time-dependent carrying capacity
+- Tumor treatment response
+- Cancer invasion
+- Spatial cancer-cell distribution
+- Mathematical and computational visualization
+
+---
 
 ## 🎯 Objectives
 
-- Analyze tumor growth using mathematical models.
-- Implement different tumor growth models using Python.
-- Visualize tumor growth and treatment behavior.
-- Study how mathematical models can be applied to cancer research.
-- Understand the behavior of tumor growth under different conditions.
+The main objectives of this project are:
 
-## 🧮 Mathematical Models
+- To understand mathematical models of tumor growth.
+- To implement tumor-growth equations using Python.
+- To compare different tumor-growth behaviors.
+- To visualize model outputs using graphs.
+- To study the effect of treatment on tumor growth.
+- To explore cancer invasion using partial differential equations.
+- To develop practical skills in mathematical modeling and scientific computing.
 
-The project includes the following models:
+---
 
-1. *Exponential Growth Model*
-2. *Logistic Growth Model*
-3. *Gompertz Growth Model*
-4. *Dynamic Carrying Capacity Model*
-5. *Cancer Invasion PDE Model*
-6. *Tumor Angiogenesis PDE Model*
-7. *Tumor Treatment Model*
+# 🧮 Mathematical Models
 
-## 🐍 Technologies Used
->>>>>>> 46145fe8e5d85cb38ea54e69e4a44c3edfa8b07d
+## 1. Exponential Growth Model
 
-- Python
-- NumPy
-- Matplotlib
-<<<<<<< HEAD
-- SymPy
-- Visual Studio Code
-- Git
-- GitHub
+The exponential growth model assumes that the tumor growth rate is proportional to the current tumor size.
 
-## Project Structure
+### Model
+
+\[
+\frac{dC}{dt} = \lambda C
+\]
+
+where:
+
+- \(C\) = tumor size
+- \(t\) = time
+- \(\lambda\) = growth rate
+
+### Implementation
+
+*Python file:* exponential growth model.py
+
+### Visualization
+
+![Exponential Growth Model](graphs/exponential_growth.png)
+
+---
+
+## 2. Logistic Growth Model
+
+The logistic model considers a limiting carrying capacity. Tumor growth slows as the tumor approaches the maximum sustainable size.
+
+### Model
+
+\[
+\frac{dC}{dt}
+=
+rC\left(1-\frac{C}{K}\right)
+\]
+
+where:
+
+- \(C\) = tumor size
+- \(r\) = growth rate
+- \(K\) = carrying capacity
+
+### Implementation
+
+*Python file:* logistic growth model.py
+
+### Visualization
+
+![Logistic Growth Model](graphs/logistic_growth.png)
+
+---
+
+## 3. Gompertz Growth Model
+
+The Gompertz model represents tumor growth where the growth rate decreases as tumor size increases.
+
+### Model
+
+\[
+\frac{dC}{dt}
+=
+rC\ln\left(\frac{K}{C}\right)
+\]
+
+where:
+
+- \(C\) = tumor size
+- \(r\) = growth parameter
+- \(K\) = carrying capacity
+
+### Implementation
+
+*Python file:* gompertz growth model.py
+
+### Visualization
+
+![Gompertz Growth Model](graphs/gompertz_growth.png)
+
+---
+
+## 4. Dynamic Carrying Capacity Model
+
+This model extends the traditional logistic model by allowing the carrying capacity to change over time.
+
+### Concept
+
+\[
+\frac{dC}{dt}
+=
+rC\left(1-\frac{C}{K(t)}\right)
+\]
+
+where \(K(t)\) represents a time-dependent carrying capacity.
+
+### Implementation
+
+*Python file:* dynamic carrying capacity model.py
+
+### Visualization
+
+![Dynamic Carrying Capacity Model](graphs/dynamic_carrying_capacity.png)
+
+---
+
+## 5. Tumor Treatment Model
+
+The tumor treatment model incorporates a treatment-related reduction in tumor growth.
+
+### Model
+
+\[
+\frac{dC}{dt}
+=
+rC\left(1-\frac{C}{K}\right)-dC
+\]
+
+where:
+
+- \(C\) = tumor size
+- \(r\) = tumor growth rate
+- \(K\) = carrying capacity
+- \(d\) = treatment-related reduction parameter
+
+### Implementation
+
+*Python file:* tumor treatment model.py
+
+### Visualization
+
+![Tumor Treatment Model](graphs/tumor_treatment.png)
+
+---
+
+# 6. Cancer Invasion PDE Model
+
+The cancer invasion model uses a system of partial differential equations to represent spatial and temporal interactions between cancer cells and other biological variables.
+
+### PDE System
+
+\[
+\frac{\partial c}{\partial t}
+=
+D_c
+\left[
+\frac{\partial}{\partial x}
+\left((1-v)\frac{\partial c}{\partial x}\right)
++
+\frac{…
+[12:51 pm, 15/08/2026] Nandusravs ❤️: # 🔬 Methodology
+
+The project follows the following workflow:
 
 ```text
-Tumor Growth/
-│
-├── exponential_growth.py
-├── exponential_growth.png
-├── logistic_growth.py
-├── logistic_growth.png
-├── gompertz_growth.py
-├── gompertz_growth.png
-├── dynamic_carrying_capacity.py
-├── dynamic_carrying_capacity.png
-├── tumor_treatment.py
-├── tumor_treatment.png
-├── cancer_invasion_pde.py
-├── cancer_invasion.png
-└── README.md
-=======
-- Mathematical Modeling
-- Differential Equations
-- Partial Differential Equations (PDEs)
+Mathematical Model
+        ↓
+Parameter Definition
+        ↓
+Python Implementation
+        ↓
+Numerical Computation
+        ↓
+Graphical Visualization
+        ↓
+Model Interpretation
+[12:52 pm, 15/08/2026] Nandusravs ❤️: # 📚 Learning Outcomes
 
-## 📂 Project Structure
+Through this project, I developed practical experience in:
 
-Each Python file contains the implementation of a mathematical model related to tumor growth or treatment.
+- Python programming
+- Mathematical modeling
+- Ordinary differential equations
+- Partial differential equations
+- Numerical simulation
+- Scientific visualization
+- NumPy
+- SymPy
+- Matplotlib
+- Git and GitHub
+- Scientific computing
+[12:52 pm, 15/08/2026] Nandusravs ❤️: # 🚀 Future Improvements
 
+- Develop numerical time-dependent solutions for the cancer invasion PDE system.
+- Perform parameter sensitivity analysis.
+- Compare multiple tumor-growth models on a single graph.
+- Develop interactive tumor-growth visualizations.
+- Explore additional tumor-treatment models.
+- Improve numerical methods for solving PDE systems.
+[12:53 pm, 15/08/2026] Nandusravs ❤️: # ⚠️ Disclaimer
 
-## 📊 Results
+This project is an educational mathematical-modeling project. The simulations are intended for learning and research purposes and do not represent clinical predictions or medical advice.
+[12:53 pm, 15/08/2026] Nandusravs ❤️: # 👩‍💻 Author
 
-The models generate numerical results and graphical representations that help visualize tumor growth and the effects of different model parameters.
-## 📊 Results
+*Shravani*
 
-The mathematical models generate numerical results and graphical representations of tumor growth and treatment behavior.
-
-The graphs help visualize:
-
-- Tumor growth over time
-- Differences between mathematical growth models
-- Effect of carrying capacity on tumor growth
-- Tumor response to treatment
-- Behavior of tumor invasion and angiogenesis models
->>>>>>> 46145fe8e5d85cb38ea54e69e4a44c3edfa8b07d
+*Project:* Quantitative Analysis of Tumor Evolution Using Mathematical Models
