@@ -108,7 +108,7 @@ The dynamic carrying capacity model extends the idea of logistic growth by allow
 
 ### Graph
 
-![Dynamic Capacity growth](graphs/dynamic_capacity_growth.png)
+![Dynamic Capacity growth](Graph/dynamic_capacity_growth.png)
 
 ---
 
@@ -126,7 +126,7 @@ The tumor treatment model incorporates the effect of treatment into tumor-growth
 
 ### Graph
 
-![Tumor treatment model](graphs/tumor_treatment_model.png)
+![Tumor treatment model](Graph/tumor_treatment_model.png)
 
 ---
 
