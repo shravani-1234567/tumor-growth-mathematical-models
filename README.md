@@ -108,7 +108,7 @@ The dynamic carrying capacity model extends the idea of logistic growth by allow
 
 ### Graph
 
-![dynamic capacity_growth](graphs/dynamic capacity_growth_model.png)
+![Dynamic Carrying Capacity Model](graphs/dynamic_capacity_growth.png)
 
 ---
 
