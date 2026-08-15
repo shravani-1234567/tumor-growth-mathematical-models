@@ -108,7 +108,7 @@ The dynamic carrying capacity model extends the idea of logistic growth by allow
 
 ### Graph
 
-![Dynamic Capacity_growth](graphs/dynamic_capacity_growth_model.png)
+![dynamic capacity_growth](graphs/dynamic capacity_growth_model.png)
 
 ---
 
@@ -126,7 +126,7 @@ The tumor treatment model incorporates the effect of treatment into tumor-growth
 
 ### Graph
 
-![Tumor Treatment model](graphs/tumor_treatment_model.png)
+![tumor treatment model](graphs/tumor treatment model.png)
 
 ---
 
@@ -144,7 +144,7 @@ The cancer invasion model extends tumor modeling from time-dependent growth to s
 
 ### Graph
 
-![Cancer invansion ](graphs/cancer_invansion.png)
+![cancer_ invasion ](graphs/cancer_invasion.png)
 
 ---
 
