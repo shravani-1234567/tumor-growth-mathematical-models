@@ -108,7 +108,7 @@ The dynamic carrying capacity model extends the idea of logistic growth by allow
 
 ### Graph
 
-![Dynamic Carrying Capacity Model](graphs/dynamic_capacity_growth.png)
+![Dynamic Capacity growth](graphs/dynamic_capacity_growth.png)
 
 ---
 
@@ -126,7 +126,7 @@ The tumor treatment model incorporates the effect of treatment into tumor-growth
 
 ### Graph
 
-![tumor treatment model](graphs/tumor treatment model.png)
+![Tumor treatment model](graphs/tumor_treatment_model.png)
 
 ---
 
@@ -350,4 +350,4 @@ The models are simplified mathematical representations of complex biological pro
 
 ⭐ Conclusion
 This project demonstrates how mathematical models and computational techniques can be used to study different aspects of tumor evolution.
-By comparing multiple models, the project provides an understanding of how tumor growth, environmental limitations, treatment effects, and spatial cancer invasion can be represented computationally
+By comparing multiple models, the project provides an understanding of how tumor growth, environmental limitations, treatment effects, and spatial cancer invasion can be represented computationally 
